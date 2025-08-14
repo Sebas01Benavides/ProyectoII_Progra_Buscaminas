@@ -29,5 +29,5 @@ o desde NetBeans ejecutar `Main`.
 - Puede adaptar `JdbcStatsRepository` a su diseño final.
 
 ## Créditos
-Inspirado por tutoriales públicos de Minesweeper en Java, con implementación propia simplificada para evitar plagio.
+Inspirado por tutoriales públicos de Minesweeper en Java, con implementación propia  
 # ProyectoII_Progra_Buscaminas
