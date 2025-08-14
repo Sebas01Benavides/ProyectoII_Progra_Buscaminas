@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Buscaminas-UTN-ProgramacionI" default="default" basedir=".">
+    <description>Proyecto Ant de Buscaminas UTN</description>
+    <property file="nbproject/project.properties"/>
+    <import file="nbproject/build-impl.xml"/>
+</project>
