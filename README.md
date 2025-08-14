@@ -1,22 +1,20 @@
 
 # Buscaminas (Programación I - UTN)
 
-Implementación simplificada del juego **Buscaminas** en Java Swing, alineada con los requerimientos del proyecto final.
+Implementación simplificada del juego **Buscaminas** en Java Swing.
 - El usuario elige `L` (tamaño del tablero LxL, L > 2).
 - Se colocan exactamente `2*L` minas sin repetición.
 - Interfaz gráfica con `JFrame` + `JPanel` (grid), menús: **Juego Nuevo** y **Salir**.
 - Estadísticas (jugados/ganados/perdidos) con repositorio configurable:
   - `InMemoryStatsRepository` (por defecto).
   - `JdbcStatsRepository` (listo para conexión a BD vía `db.properties`).
-
-> **Nota:** Este proyecto no incluye el *script* de la base de datos; solo se deja lista la conexión JDBC.
-  Agregue el *driver* JDBC de su gestor (MySQL, PostgreSQL, SQLite, etc.) al classpath y configure `src/main/resources/db.properties`.
+ 
 
 ## Ejecutar
 ```bash
 mvn -q -DskipTests exec:java
 ```
-o desde NetBeans, abrir el proyecto Maven y ejecutar `Main`.
+o desde NetBeans ejecutar `Main`.
 
 ## Atajos de uso
 - **Click izquierdo**: destapar.
@@ -26,15 +24,7 @@ o desde NetBeans, abrir el proyecto Maven y ejecutar `Main`.
 - Ganas cuando todas las minas quedan **marcadas** (exactamente) y el resto del tablero está destapado.
 
 ## Configuración JDBC
-Archivo `src/main/resources/db.properties` (ejemplo):
-```
-jdbc.url=jdbc:mysql://localhost:3306/buscaminas
-jdbc.username=usuario
-jdbc.password=clave
-jdbc.driver=com.mysql.cj.jdbc.Driver
-```
 
-Tabla esperada (a cargo de su compañero):
 - Sugerida: `stats(games_played INT, games_won INT, games_lost INT, last_played TIMESTAMP)` con una sola fila (id=1).
 - Puede adaptar `JdbcStatsRepository` a su diseño final.
 
