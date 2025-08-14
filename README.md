@@ -40,3 +40,4 @@ Tabla esperada (a cargo de su compañero):
 
 ## Créditos
 Inspirado por tutoriales públicos de Minesweeper en Java, con implementación propia simplificada para evitar plagio.
+# ProyectoII_Progra_Buscaminas
